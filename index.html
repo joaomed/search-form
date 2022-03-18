@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="blur"></div>
+    <header>
+      <h1>searchForm.</h1>
+      <p>
+        Obrigado por você nos fornecer as informações para aprimorar a
+        plataforma
+      </p>
+    </header>
+
+    <form action="" method="get">
+      <!--Nome-->
+      <div class="campo-container">
+        <label for="id-nome" id="pergunta">Nome </label>
+        <input
+          type="text"
+          name="nome"
+          id="id-nome"
+          placeholder="Digite seu nome"
+          required
+        />
+      </div>
+
+      <!--Email-->
+      <div class="campo-container">
+        <label for="id-email" id="pergunta">Email </label>
+        <input
+          type="email"
+          name="email"
+          id="id-email"
+          placeholder="Digite seu email"
+          required
+        />
+      </div>
+
+      <!--Idade-->
+      <div class="campo-container">
+        <label for="id-idade" id="pergunta">Idade </label>
+        <input
+          type="number"
+          name="idade"
+          id="id-idade"
+          placeholder="Digite sua idade"
+          required
+        />
+      </div>
+
+      <!--Função que te define-->
+      <div class="campo-container">
+        <label for="id-funcao" id="pergunta"
+          >Qual opção define melhor sua atual função?</label
+        >
+        <select name="funcao" id="id-funcao" required>
+          <option value="">Selecione a sua atual função</option>
+          <option value="estudante">Estudante</option>
+          <option value="trab-integral">Trabalho em tempo integral</option>
+          <option value="aprend-integral">Aprendizado em tempo integral</option>
+          <option value="nao-dizer">Prefiro não dizer</option>
+          <option value="outro">Outro</option>
+        </select>
+      </div>
+
+      <!--Você recomenda?-->
+      <div class="campo-container" id="recomenda">
+        <label for="recomenda" id="pergunta"
+          >Você recomendaria esse formulário para algum amigo?</label
+        >
+        <div id="check">
+          <input
+            type="radio"
+            id="defitivamente"
+            name="recomenda"
+            value="definitivamente"
+          />
+          <label for="definitivamente">Definitivamente</label>
+          <br />
+          <input type="radio" id="talvez" name="recomenda" value="talvez" />
+          <label for="talvez">Talvez</label>
+          <br />
+          <input type="radio" id="nao" name="recomenda" value="nao" />
+          <label for="nao">Não</label>
+        </div>
+      </div>
+
+      <!--Em que mais gosta de aplicar?-->
+      <div class="campo-container">
+        <label for="id-aplicacao" id="pergunta"
+          >Em que você mais gosta de aplicar os conhecimentos?</label
+        >
+        <select name="aplicacao" id="id-aplicacao" required>
+          <option value="">Selecione uma opção</option>
+          <option value="desafios">Desafios</option>
+          <option value="projetos">Projetos</option>
+          <option value="comunidade">Comunidade</option>
+          <option value="open-source">Open Source</option>
+        </select>
+      </div>
+
+      <!-- O que você precisa aprimorar?-->
+      <div class="campo-container" id="aprimora">
+        <label for="aprimora" id="pergunta"
+          >O que você precisa aprimorar?</label
+        >
+
+        <div id="check">
+          <input
+            id="id-front"
+            name="aprimorar"
+            value="front-end"
+            type="checkbox"
+          />
+          <label for="id-front">Projetos Front-end</label>
+          <br />
+          <input
+            id="id-back"
+            name="aprimorar"
+            value="back-end"
+            type="checkbox"
+          />
+          <label for="id-back">Projetos Back-end</label>
+          <br />
+          <input
+            id="id-banco"
+            name="aprimorar"
+            value="banco-dados"
+            type="checkbox"
+          />
+          <label for="id-banco">Banco de Dados</label>
+          <br />
+          <input
+            id="id-desafios"
+            name="aprimorar"
+            value="desafios"
+            type="checkbox"
+          />
+          <label for="id-desafios">Desafios</label>
+          <br />
+          <input
+            id="id-comunidade"
+            name="aprimorar"
+            value="comunidade-open-source"
+            type="checkbox"
+          />
+          <label for="id-comunidade">Comunidade Open Source</label>
+          <br />
+          <input
+            id="id-videos"
+            name="aprimorar"
+            value="videos"
+            type="checkbox"
+          />
+          <label for="id-videos">Videos</label>
+          <br />
+          <input id="id-wiki" name="aprimorar" value="wiki" type="checkbox" />
+          <label for="id-wiki">Libs</label>
+          <br />
+          <input id="id-forum" name="aprimorar" value="forum" type="checkbox" />
+          <label for="id-forum">Frameworks</label>
+          <br />
+          <input
+            id="id-cursos"
+            name="aprimorar"
+            value="cursos"
+            type="checkbox"
+          />
+          <label for="id-cursos">APIs</label>
+          <br />
+        </div>
+      </div>
+
+      <!--Comentários-->
+      <div class="campo-container">
+        <label for="id-sugestoes" id="pergunta"
+          >Comentários ou sugestões?
+        </label>
+        <textarea
+          name="sugestao"
+          id="id-sugestoes"
+          cols="30"
+          rows="10"
+          placeholder="Insira seu comentário aqui..."
+        ></textarea>
+      </div>
+
+      <!-- Button-->
+      <div class="campo-container">
+        <button type="submit" id="button">Enviar</button>
+      </div>
+    </form>
+  </body>
+</html>

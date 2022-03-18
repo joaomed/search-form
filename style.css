@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+}
+
+h1 {
+  font: bold;
+}
+
+p {
+  font-style: italic;
+}
+
+body {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+  color: white;
+}
+
+.blur {
+  background-image: url(./files/images/background.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  filter: blur(4px);
+}
+
+header form {
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
+}
+
+header {
+  z-index: 3;
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: end;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 720px;
+  padding: 30px;
+}
+
+form {
+  font-size: 1.5rem;
+  padding: 6rem;
+  height: 90%;
+  width: 50%;
+  position: relative;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 60%);
+}
+
+.campo-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+
+.campo-container input {
+  height: 25px;
+  font-size: 20px;
+}
+
+.campo-container select {
+  height: 25px;
+  font-size: 20px;
+}
+
+.campo-container textarea {
+  font-size: 20px;
+}
+
+#pergunta {
+  display: block;
+  margin: 8px 0;
+}
+
+#button {
+  height: 30px;
+  width: 150px;
+  background-color: rgba(255, 255, 255, 40%);
+  border-radius: 5px;
+  border: 1px;
+}
